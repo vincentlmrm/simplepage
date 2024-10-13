@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowise Chat Widget</title>
+    <script src="https://cdn.jsdelivr.net/npm/@flowiseai/embed@latest"></script>
+</head>
+<body>
+    <div id="flowise-chat-widget"></div>
+    <script>
+        const chatWidget = new FlowiseChatWidget({
+        chatflowid: "a868d629-aa92-41d0-be00-cec84cb54a73",
+        apiHost: "https://comflow-poc.onrender.com",
+        });
+        chatWidget.render(document.getElementById('flowise-chat-widget'));
+    </script>
+</body>
+</html>
